@@ -8,6 +8,8 @@ This project demonstrates modern React architecture, API integration,
 state management using Context API, and clean UI structuring --- making
 it portfolio and recruiter ready.
 
+project domain: https://main.d2y9re7k9s4u20.amplifyapp.com/
+
 ------------------------------------------------------------------------
 
 ## 🚀 Live Features
