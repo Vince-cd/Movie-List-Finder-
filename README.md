@@ -95,16 +95,6 @@ npm run dev
 
 ------------------------------------------------------------------------
 
-## 📌 Future Enhancements
-
--   Movie Details Page (Dynamic Routing)
--   Pagination / Infinite Scroll
--   Dark Mode Toggle
--   Unit Testing (Jest + React Testing Library)
--   Deployment (Vercel / Netlify)
-
-------------------------------------------------------------------------
-
 ## 👨‍💻 Author
 
 Built as a portfolio project to demonstrate frontend engineering skills,
