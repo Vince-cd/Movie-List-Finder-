@@ -1,16 +1,112 @@
-# React + Vite
+# 🎬 Movie Explorer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production-ready React application that integrates with the TMDB API
+to allow users to browse trending movies, search titles in real-time,
+and manage a persistent favorites list.
 
-Currently, two official plugins are available:
+This project demonstrates modern React architecture, API integration,
+state management using Context API, and clean UI structuring --- making
+it portfolio and recruiter ready.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+------------------------------------------------------------------------
 
-## React Compiler
+## 🚀 Live Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   🔥 Browse Popular Movies (TMDB API Integration)
+-   🔎 Search Movies by Title
+-   ❤️ Add / Remove Favorites
+-   💾 Persistent Favorites with LocalStorage
+-   ⚡ Optimized Rendering with React Hooks
+-   🧠 Global State Management using Context API
+-   📱 Responsive Grid Layout
 
-## Expanding the ESLint configuration
+------------------------------------------------------------------------
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗 Architecture & Design
+
+The application follows a clean and scalable structure:
+
+-   Component-based architecture
+-   Separation of concerns (API layer, Context, UI components)
+-   Reusable MovieCard component
+-   Centralized favorites management
+-   Persistent client-side storage
+
+------------------------------------------------------------------------
+
+## 🛠 Tech Stack
+
+Frontend: - React (Hooks & Context API) - JavaScript (ES6+) - CSS
+
+API: - TMDB (The Movie Database REST API)
+
+------------------------------------------------------------------------
+
+## 🔑 API Integration
+
+The application connects to the TMDB API for:
+
+-   Fetching popular movies
+-   Searching movies dynamically
+-   Rendering poster images via TMDB image CDN
+
+API requests are handled inside a dedicated `services/api.js` module for
+maintainability.
+
+------------------------------------------------------------------------
+
+## 🧠 State Management
+
+Favorites are handled globally using React Context API.
+
+Features include: - Add to favorites - Remove from favorites - Check if
+movie is already favorited - Auto-persist to localStorage
+
+This demonstrates understanding of global state patterns without relying
+on external libraries.
+
+------------------------------------------------------------------------
+
+## 💡 Key Engineering Decisions
+
+-   Context API over Redux for lightweight global state
+-   Separation of API logic from UI components
+-   Defensive UI rendering (loading & error states)
+-   Fallback handling for missing movie posters
+-   Clean conditional rendering for empty states
+
+------------------------------------------------------------------------
+
+## ⚙️ Installation
+
+1.  Clone the repository:
+
+git clone https://github.com/your-username/movie-explorer.git
+
+2.  Install dependencies:
+
+npm install
+
+3.  Run the development server:
+
+npm run dev
+
+------------------------------------------------------------------------
+
+## 📌 Future Enhancements
+
+-   Movie Details Page (Dynamic Routing)
+-   Pagination / Infinite Scroll
+-   Dark Mode Toggle
+-   Unit Testing (Jest + React Testing Library)
+-   Deployment (Vercel / Netlify)
+
+------------------------------------------------------------------------
+
+## 👨‍💻 Author
+
+Built as a portfolio project to demonstrate frontend engineering skills,
+API integration, and scalable React architecture.
+
+------------------------------------------------------------------------
+
